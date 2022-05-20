@@ -74,6 +74,8 @@ class Conslusion:
 
         # requettes pour bdd PDF
 
+
+
         # -------------Surface Observation --------------
         connexion = sqlite3.connect(cheminBDD)
         curseur = connexion.cursor()  # Récupération d'un curseur
@@ -257,8 +259,11 @@ class Conslusion:
     def pdfWrite(self, filename, SurfaceObservationData, ContactTemperatureCalculationData,
                  ThermalApproachOfElectricPhenomenaData, HeatTransferInFinsData,matriceTab1,IR_RadiationCAMData):
         global nom1, nom2
-        nom1 = "Gregoire BLANC"
-        nom2 = "Charles GAUTHEREAU"
+
+
+        nom1 = "Grégoire BLANC"
+        nom2 = "charles GAUTHEREAU"
+
         # create a fpdf object
         pdf = PDF('P', 'mm', 'A4')
         pdf.set_auto_page_break(auto=True, margin=50)
